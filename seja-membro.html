@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seja Membro - Gamer Store</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="container-grid cabecalho">
+            <span><img src="img/logo.svg" class="logo" alt="Logo de Aplicação do Site"></span>
+            <nav id="menu" class="menu">
+                <a href="index.html">Principal</a>
+                <a href="lancamentos.html">Lançamentos</a>
+                <a href="destaques.html">Destaques</a>
+                <a href="eletronicos.html">Eletrônicos</a>
+                <a href="seja-membro.html" class="active">Seja Membro</a>
+            </nav>
+
+            <input type="text" name="procurar" placeholder="Procurar">
+        </div>
+    </header>
+    <section class=container-grid>
+
+        <h1>Seja Membro!</h1>
+
+    </section>
+    <section class="container-grid">
+        <img src="img/membership.png" alt="Imagem de Registro" style="float:right;width: 150px;height: auto;">
+        <br>Para você entrar neste mundo Gamer você terá que fazer o cadastro abaixo.<br><br>
+        <table>
+
+            <tr>
+                <td width="50px"> Nome:</td>
+                <td><input type="text" id="sNome" oninput="mudarN(this)" name="nome" style="border-left: 6px solid orange;background-image: none;"></td>
+            </tr>
+            <tr>
+                <td>E-mail:</td>
+                <td><input type="text" id="sEmail" oninput="mudarE(this)" name="email" style="border-left: 6px solid orange;background-image: none;"></td>
+            </tr>
+            <tr>
+                <td>CPF:</td>
+                <td>
+                    <input oninput="mascara(this, 'cpf'), mudarC(this)" id="sCpf" type="text" class="form-control" placeholder="Ex.: xxx.xxx.xxx-xx" autocomplete="off" name="cpf" style="border-left: 6px solid orange; background-image: none;">
+                </td>
+            </tr>
+
+        </table>
+
+        <button class="button">Cadastrar</button>
+    </section>
+
+
+    <section class="container-grid">
+
+        <div class="footer">GAMER SPOT CopyRight 2021</div>
+
+    </section>
+    <script>
+        function mascara(i, t) {
+            var v = i.value;
+
+            if (t == "cpf") {
+                i.setAttribute("maxlength", "14 ");
+                if (v.length == 3 || v.length == 7) i.value += ".";
+                if (v.length == 11) i.value += "-";
+            }
+
+        }
+
+        function mudarN(w) {
+            var w = w.value;
+
+            if (w.length > 0) {
+                document.getElementById("sNome").style.width = "200px ";
+                document.getElementById("sNome").style.borderLeft = "6px solid green ";
+            } else {
+                document.getElementById("sNome").style.width = " ";
+                document.getElementById("sNome").style.borderLeft = " ";
+            }
+
+        }
+
+        function mudarE(e) {
+            var e = e.value;
+
+            if (e.length > 0) {
+                document.getElementById("sEmail").style.width = "200px ";
+                document.getElementById("sEmail").style.borderLeft = "6px solid green ";
+            } else {
+                document.getElementById("sEmail").style.width = " ";
+                document.getElementById("sEmail").style.borderLeft = " ";
+            }
+
+        }
+
+        function mudarC(c) {
+            var c = c.value;
+
+            if (c.length > 0) {
+                document.getElementById("sCpf").style.width = "200px";
+                document.getElementById("sCpf").style.borderLeft = "6px solid green";
+            } else {
+                document.getElementById("sCpf").style.width = "";
+                document.getElementById("sCpf").style.borderLeft = "";
+            }
+
+        }
+    </script>
+</body>

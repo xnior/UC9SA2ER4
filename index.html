@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal - Gamer Store</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery.js"></script>
+</head>
+
+<body onload="rendenizarNoticias(),rendenizarListaClassificados()">
+    <header>
+        <div class="container cabecalho" id="menu-paginas">
+            <span><a href="index.html"><img src="img/logo.svg" class="logo" alt="Logo de Aplicação do Site"></a></span>
+            <nav class="menu" id="menu">
+
+                <a href="index.html">Principal</a>
+                <a href="lancamentos.html">Lançamentos</a>
+                <a href="destaques.html">Destaques</a>
+                <a href="eletronicos.html">Eletrônicos</a>
+                <a href="seja-membro.html" class="active">Seja Membro</a>
+
+            </nav>
+            <input type="checkbox" id="bt_menu">
+            <!-- <label for="bt_menu" onclick="mostrarMenu()">&#9776;</label> -->
+            <label for="bt_menu" id="barras">&#9776;</label>
+
+            <input class="menuBarras" id="procurarSite" type="text" name="procurar" placeholder="Procurar">;
+        </div>
+    </header>
+
+    <section class="banner img1" id="banner">
+        <div class="col-xs-12 col-sm-12 progress-container">
+            <div class="progress progress-striped active" style="background-color: transparent;">
+                <div class="progress-bar progress-bar-success active" id="largura" style="width: 0%"></div>
+            </div>
+        </div>
+    </section>
+
+
+    <div class="container">
+        <section>
+            <div class="row col-md-auto">
+                <div class="galeria">
+                    <a href="#" target="_blank">
+                        <img src="img/produtos/001.png" alt="Imagem 1">
+                    </a>
+
+                    <div class="desc">Imagem 01</div>
+                </div>
+
+                <div class=" galeria">
+                    <a href="#" target="_blank">
+                        <img src="img/produtos/002.png" alt="Imagem 2">
+                    </a>
+                    <div class="desc">Imagem 02</div>
+                </div>
+                <div class=" galeria">
+                    <a href="#" target="_blank">
+                        <img src="img/produtos/003.png" alt="Imagem 3">
+                    </a>
+                    <div class="desc">Imagem 03</div>
+                </div>
+
+                <div class=" galeria">
+                    <a href="#" target="_blank">
+                        <img src="img/produtos/004.png" alt="Imagem 4">
+                    </a>
+                    <div class="desc">Imagem 04</div>
+                </div>
+                <div class=" galeria">
+                    <a href="#" target="_blank">
+                        <img src="img/produtos/005.png" alt="Imagem 5">
+                    </a>
+                    <div class="desc">Imagem 05</div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="cabecalho">
+            <div class="row justify-content-md-center col-9 " id="espaco-noticias">
+                <!-- <div class="col-md-3 cardNews">
+                <img src="img/news.jpg" class="img-thumbnail" alt="Imagem de Notícia">
+                <h4>Titulo da Notícia</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod temporary incididunt ut labore et dolore magna aliqua. Enim adim ad minimim veniam, quis nostrud exercise ullamco laboris nisi ut alipip ex ea commodo consequat.
+                        Duis auteur irure pain in reprehenderit in voluptate velit.</p>
+            </div> -->
+
+            </div>
+
+            <div class="col-md-auto">
+                <!-- <aside> -->
+                <table class="table" id="tabela-gamer">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Sobr.</th>
+                            <th scope="col">Handle</th>
+                        </tr>
+                    </thead>
+                    <tbody id="lista-classificados">
+
+                    </tbody>
+                </table>
+                <!-- </aside> -->
+            </div>
+        </section>
+    </div>
+
+
+    <section class="container" style="padding: 0;">
+        <div class="footer g-col-6">GameSpot
+            <form action="">
+                <input type="email" name="newsletter" id="cadnewsletter" placeholder="News Letter E-mail" class="input-standard">
+                <button class="button-standard">Cadastrar</button>
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src="js/script.js"></script>
+</body>
