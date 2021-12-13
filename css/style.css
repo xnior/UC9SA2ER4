@@ -41,6 +41,13 @@ h1 {
     height: 100%;
 }
 
+.cabecalho-secoes {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 100%;
+}
+
 nav {
     list-style-type: none;
     margin: 0;
