@@ -186,11 +186,11 @@ input[type=text] {
     background-repeat: no-repeat;
     font-size: 16px;
     padding: 10px 10px 10px 35px;
-    transition: width 0.6s;
+    transition: width 1s;
 }
 
 input[type=text]:focus {
-    width: 200px;
+    width: 50px;
 }
 
 .button {
