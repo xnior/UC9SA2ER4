@@ -6,7 +6,7 @@ $(document).ready(function() {
     let slideAtual = 1;
 
     let listaSides = ["img1", "img2", "img3", "img4", "img5"];
-    let tempo = 10000;
+    let tempo = 5000;
     setInterval(slide, tempo);
 
     function slide() {
